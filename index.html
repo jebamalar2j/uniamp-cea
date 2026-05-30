@@ -128,7 +128,7 @@ async function tryUnlock() {
   document.getElementById('spin').style.display = 'block';
   document.getElementById('err').style.display = 'none';
 
-  const [inputHash, realHash] = await Promise.all([sha256(pwd), sha256('UniAmp@2025')]);
+  const [inputHash, realHash] = await Promise.all([sha256(pwd), sha256('UniAmp@2026')]);
   document.getElementById('spin').style.display = 'none';
 
   if (inputHash === realHash) {
